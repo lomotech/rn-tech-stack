@@ -9,13 +9,13 @@ import {Header} from './components/common'
 // component
 const App = () => {
 
-    return (
-        <Provider store={createStore(reducers)}>
-            <View>
-                <Header headerText="Tech Stack"/>
-            </View>
-        </Provider>
-    )
+  return (
+    <Provider store={createStore(reducers)}>
+      <View>
+        <Header headerText="Tech Stack"/>
+      </View>
+    </Provider>
+  )
 }
 
 export default App
