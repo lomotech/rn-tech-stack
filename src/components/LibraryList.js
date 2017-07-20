@@ -12,4 +12,11 @@ class LibraryList extends Component() {
   }
 }
 
-export default connect()(LibraryList)
+const mapStateToProps = state => {
+  return { libraries: state.libraries }
+}
+
+// connect have 2 part of function
+// 1. prepare props data
+// 2. connect that props data to class
+export default connect(mapStateToProps)(LibraryList)
